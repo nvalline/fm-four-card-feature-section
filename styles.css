@@ -163,6 +163,7 @@ body main section article {
   width: 100%;
   max-width: 350px;
   border-radius: 8px;
+  overflow: hidden;
   background-color: hsl(0, 0%, 100%);
   box-shadow: 0 15px 30px -11px hsla(213, 47%, 67%, 0.5);
 }
