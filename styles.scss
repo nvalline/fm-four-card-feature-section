@@ -1,2 +1,99 @@
 @use './reset';
 @use './variables' as *;
+
+body {
+	padding: 5.3125rem 2rem 4.875rem;
+	background-color: $lightGray;
+	font-family: $font-primary;
+	font-style: normal;
+
+	header {
+		width: 100%;
+		margin-bottom: 4.75rem;
+		text-align: center;
+
+		h1 {
+			margin-bottom: 1rem;
+			font-size: $display;
+			font-weight: $fw-light;
+			line-height: 1.458;
+			letter-spacing: 0.17px;
+			color: $darkBlue;
+
+			> span {
+				font-weight: $fw-semiBold;
+			}
+		}
+
+		p {
+			font-size: $subHeading;
+			font-weight: $fw-regular;
+			line-height: 1.667;
+			letter-spacing: 0.1px;
+			color: $darkBlue;
+		}
+	}
+
+	main {
+		section {
+			display: grid;
+			gap: 1.5rem;
+
+			article {
+				width: 100%;
+				max-width: 350px;
+				border-radius: 8px;
+				background-color: $white;
+				box-shadow: 0 15px 30px -11px $shadow;
+
+				.accent {
+					height: 3.55px;
+					width: 100%;
+					border-radius: 8px 8px 0 0;
+				}
+
+				.content {
+					padding: 1.75rem;
+
+					h2 {
+						margin-bottom: 1px;
+						font-size: $title;
+						font-weight: $fw-semiBold;
+						color: $darkBlue;
+					}
+
+					p {
+						margin-bottom: 2rem;
+						font-size: $body;
+						font-weight: $fw-regular;
+						line-height: 1.77;
+						letter-spacing: 0.09px;
+						color: $darkBlue;
+					}
+
+					div {
+						width: 100%;
+						display: flex;
+						justify-content: flex-end;
+					}
+				}
+
+				.cyan {
+					background-color: $cyan;
+				}
+
+				.red {
+					background-color: $red;
+				}
+
+				.orange {
+					background-color: $orange;
+				}
+
+				.blue {
+					background-color: $blue;
+				}
+			}
+		}
+	}
+}

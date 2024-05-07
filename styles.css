@@ -12,18 +12,10 @@ html {
   text-size-adjust: none;
 }
 
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin-block-end: 0;
+/* Remove Default Spacing */
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -88,4 +80,84 @@ textarea:not([rows]) {
 /* Anything that has been anchored to should have extra scroll margin */
 :target {
   scroll-margin-block: 5ex;
+}
+
+body {
+  padding: 5.3125rem 2rem 4.875rem;
+  background-color: hsl(0, 0%, 98%);
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+}
+body header {
+  width: 100%;
+  margin-bottom: 4.75rem;
+  text-align: center;
+}
+body header h1 {
+  margin-bottom: 1rem;
+  font-size: clamp(1.5rem, 1.0666rem + 1.849vw, 2.25rem);
+  font-weight: 200;
+  line-height: 1.458;
+  letter-spacing: 0.17px;
+  color: hsl(234, 12%, 34%);
+}
+body header h1 > span {
+  font-weight: 600;
+}
+body header p {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.667;
+  letter-spacing: 0.1px;
+  color: hsl(234, 12%, 34%);
+}
+body main section {
+  display: grid;
+  gap: 1.5rem;
+}
+body main section article {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 8px;
+  background-color: hsl(0, 0%, 100%);
+  box-shadow: 0 15px 30px -11px hsla(213, 47%, 67%, 0.5);
+}
+body main section article .accent {
+  height: 3.55px;
+  width: 100%;
+  border-radius: 8px 8px 0 0;
+}
+body main section article .content {
+  padding: 1.75rem;
+}
+body main section article .content h2 {
+  margin-bottom: 1px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+body main section article .content p {
+  margin-bottom: 2rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.77;
+  letter-spacing: 0.09px;
+  color: hsl(234, 12%, 34%);
+}
+body main section article .content div {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+body main section article .cyan {
+  background-color: hsl(180, 62%, 55%);
+}
+body main section article .red {
+  background-color: hsl(0, 78%, 62%);
+}
+body main section article .orange {
+  background-color: hsl(34, 97%, 64%);
+}
+body main section article .blue {
+  background-color: hsl(212, 86%, 64%);
 }/*# sourceMappingURL=styles.css.map */
